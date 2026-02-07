@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Blog Dashboard</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             <form id="postForm">
                 <div class="mb-3">
                     <label class="form-label">Title</label>
-                    <input type="text" id="title" class="form-control" required>
+                    <input type="text" id="title" class="form-control" required />
                 </div>
 
                 <div class="mb-3">
@@ -36,6 +36,20 @@
                 <button class="btn btn-primary">Add Post</button>
             </form>
         </div>
+    </div>
+
+    <!-- Search & Sort Controls -->
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-column flex-md-row gap-2">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control w-100 w-md-50"
+        placeholder="Search posts by title..."
+      />
+      <select id="sortOrder" class="form-select w-100 w-md-25">
+        <option value="newest" selected>Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
     </div>
 
     <!-- Posts -->
